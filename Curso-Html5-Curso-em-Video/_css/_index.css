@@ -1,3 +1,7 @@
+@charset "UTF-8";
+
+/* Elementos Estruturais */
+
 body {
     background-color: indigo;
 }
@@ -9,6 +13,7 @@ header{
     padding: 10px;
     box-shadow: 3px 3px 5px black;
 }
+
 main {
     background-color: gray;
     width: 900px;
@@ -16,6 +21,8 @@ main {
     padding: 10px;
     box-shadow: 3px 3px 5px black;
 }
+
+/* Elementos de Textos*/
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -50,4 +57,36 @@ p {
     font-size: 16px;
     text-align: justify;
     color: black;
+}
+
+/* Elementos de imagem */
+
+figure.imagens {
+    position: relative;
+    border: 3px solid darkred;
+    box-shadow: 1px 1px 3px black;
+}
+
+figure.imagens img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.imagens figcaption {
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 24px;
+    text-align: end;
+}
+
+figure.imagens:hover figcaption {
+    opacity: 1;
 }
