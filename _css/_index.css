@@ -24,6 +24,17 @@ main {
     padding: 10px;
 }
 
+section#artigos {
+    display: block;
+    width: 700px;
+}
+
+footer {
+    clear: both;
+    border-top: 3px solid black;
+}
+
+
 /* Elementos de Textos*/
 
 header#cabecalho h1 {
