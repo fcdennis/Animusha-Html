@@ -1,0 +1,27 @@
+<h4>Mais sobre animes</h4>
+        <figure class="miniaturas">
+        <a href="animes.html"><img src="_imagens/my_hero_academia.jpg" alt="my_hero_academia"></a>
+        </figure>
+        <h4>Mais sobre games</h4>
+        <figure class="miniaturas">
+        <a href="games.html"><img src="_games/gta5_trevor.jpg" alt="gta5_trevor"></a>
+        </figure>
+        <h4>Mais sobre filmes</h4>
+        <figure class="miniaturas">
+        <a href="filmes.html"><img src="_filmes/star_wars_epIV_anh_peq.jpg" alt="Star_Wars"></a>
+        </figure>
+        <h4>Mais sobre séries</h4>
+        <figure class="miniaturas">
+        <a href="series.html"><img src="_series/alias_peq.jpg" alt="Alias"></a>
+        </figure>
+
+figure.miniaturas {
+    position: relative;
+    border: 1px solid white;
+    box-shadow: 1px 1px 3px white;
+}
+
+figure.miniaturas img{
+    width: 200px;
+    height: 200px;
+}

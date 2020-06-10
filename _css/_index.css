@@ -26,14 +26,14 @@ main {
 
 section#artigos {
     display: block;
-    width: 700px;
+    width: 840px;
     float: left;
     border-right: 5px solid black;
 }
 
 aside#lateral {
     display: block;
-    width: 380px;
+    width: 310px;
     float: right;
 }
 
@@ -116,6 +116,10 @@ figure.imagens:hover figcaption {
     opacity: 1;
 }
 
+figure.miniaturas {
+    position: relative;
+}
+
 figure.miniaturas img{
     width: 200px;
     height: 200px;
@@ -132,7 +136,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -5px;
-    right: 360px;
+    right: 290px;
 }
 
 nav#menu li {
@@ -158,4 +162,42 @@ nav#menu li:hover {
 
 nav#menu a:hover{
     color: black;
+}
+
+/* Elementos de Tabela */
+
+table#calendario {
+    margin: auto;
+    border: 1px solid white;
+    border-spacing: 1px;
+}
+
+table#calendario td {
+    border: 1px dotted black;
+    padding: 1px;
+    margin-top: 5px;
+}
+
+table#calendario .ce {
+    font-family: 'Special Elite', cursive;
+    font-size: 16px;
+    text-align: right;
+    color: firebrick;
+    background-color: lightcyan;
+}
+
+table#calendario .cd {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    color: blueviolet;
+    background-color: wheat
+}
+
+table#calendario caption {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 24px;
+    text-align: left;
+    color: purple;
+    margin-bottom: 5px;
 }
