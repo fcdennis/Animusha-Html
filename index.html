@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="index" content="Página Inicial do Projeto">
     <title>Animusha</title>
-    <link rel="stylesheet" href="_css/_index.css">
-    <script> 
-    </script>
+    <link rel="stylesheet" href="_css/style.css">
+    <script language = "javascript" src="_script/script.js"></script>
 </head>
 <body>
 <div id="interface">
@@ -33,8 +32,8 @@
         <h4>Os melhores animes que eu já vi!</h4>
         <p>Uma relação com os melhores animes da minha vida</p>
         <figure class="imagens">
-        <img src="_imagens/shokugeki_no_soma.jpg" alt="Food war">
-        <figcaption>Food Wars</figcaption>
+        <img src="_imagens/shokugeki_no_soma.jpg" id="imagemDoDia">
+        <figcaption>Grandes Animes</figcaption>
     </figureclass>
     </article>
     <article id="capa">
@@ -57,44 +56,42 @@
         <h4>Séries para maratonar</h4>
         <p>As séries que realmente valem o seu tempo</p>
         <figure class="imagens">
-        <img src="_series/alias_peq.jpg" alt="Alias">
-        <figcaption>Alias: Codinome Perigo</figcaption>
+        <img src="_series/GameofThrones.png" alt="Game of Thrones">
+        <figcaption>Game of Thrones</figcaption>
         </figure>
     </article>
     </section> 
     <aside id="lateral">
-        <iframe width="310" height="200" src="https://relogioonline.com.br/embed/horario/são-paulo/#digital=0&theme=1&color=4&ampm=1&showdate=0" frameborder="0" allowfullscreen></iframe>
-
         <table id="calendario">
             <caption>Calendario de lançamentos</caption>
-            <tr><td class="ce" rowspan="6">Domingo</td><td class="cd">Tsugu Tsugomomo</td></tr>
+            <tr><td class="ce" rowspan="6" id="imagemDoDia" onmouseover="mudaFoto('naruto.jpg')" onmouseout="mudaFoto('shokugeki_no_soma.jpg')"> Domingo</td><td class="cd">Tsugu Tsugomomo</td></tr>
             <tr><td class="cd">Boruto</td></tr>
             <tr><td class="cd">Kigdom</td></tr>
             <tr><td class="cd">Gleipnir</td></tr>
             <tr><td class="cd">Yu-Gi-Oh! : Sevens</td></tr>
             <tr><td class="cd">Shachou, Battle no Jikan Desu!</td></tr>
-            <tr><td class="ce" rowspan="4">Segunda</td><td class="cd">Fruits Basket</td></tr>
+            <tr><td class="ce" rowspan="4" id="imagemDoDia" onmouseover="mudaFoto('bleach.jpg')" onmouseout="mudaFoto('shokugeki_no_Soma.jpg')">Segunda</td><td class="cd">Fruits Basket</td></tr>
             <tr><td class="cd">Shironeko Project: Zero Chronicle</td></tr>
             <tr><td class="cd">Jasmin-chan Gropkick</td></tr>
             <tr><td class="cd">A3!</td></tr>
-            <tr><td class="ce" rowspan="3">Terça</td><td class="cd">Black Cover</td></tr>
+            <tr><td class="ce" rowspan="3" id="imagemDoDia" onmouseover="mudaFoto('dragon_ball_super.jpg')" onmouseout="mudaFoto('shokugeki_no_soma.jpg')">Terça</td><td class="cd">Black Cover</td></tr>
             <tr><td class="cd">Shadowverse</td></tr>
             <tr><td class="cd">Houkago Teibou Nisshi</td></tr>
-            <tr><td class="ce" rowspan="4">Quarta</td><td class="cd">Appare-Ranman!</td></tr>
+            <tr><td class="ce" rowspan="4" id="imagemDoDia" onmouseover="mudaFoto('dr_stone.jpg')" onmouseout="mudaFoto('shokugeki_no_soma.jpg')">Quarta</td><td class="cd">Appare-Ranman!</td></tr>
             <tr><td class="cd">Tamayomi</td></tr>
             <tr><td class="cd">Plunderer</td></tr>
             <tr><td class="cd">Tower of God</td></tr>
-            <tr><td class="ce" rowspan="5">Quinta</td><td class="cd">Kakushigoto</td></tr>
+            <tr><td class="ce" rowspan="5" id="imagemDoDia" onmouseover="mudaFoto('kimetsu_no_yaiba.jpg')" onmouseout="mudaFoto('shokugeki_no_soma.jpg')">Quinta</td><td class="cd">Kakushigoto</td></tr>
             <tr><td class="cd">Hachi-nan tte</td></tr>
             <tr><td class="cd">Sore wa Nai deshou!</td></tr>
             <tr><td class="cd">Fugou Keiji: Balance: Unlimited</td></tr>
             <tr><td class="cd">Gudam Build Drivers Re:Rise</td></tr>
-            <tr><td class="ce" rowspan="5">Sexta</td><td class="cd">Shin Sakura Taisen</td></tr>
+            <tr><td class="ce" rowspan="5" id="imagemDoDia" onmouseover="mudaFoto('my_hero_academia.jpg')" onmouseout="mudaFoto('shokugeki_no_soma.jpg')">Sexta</td><td class="cd">Shin Sakura Taisen</td></tr>
             <tr><td class="cd">Bungou to Alchemist: Shinpan no Haguruma</td></tr>
             <tr><td class="cd">Listeners</td></tr>
             <tr><td class="cd">Zashiki Warashi no Tatami-chan</td></tr>
             <tr><td class="cd">Nami yo Kiitekure</td></tr>
-            <tr><td class="ce" rowspan="10">Sábado</td><td class="cd">Major</td></tr>
+            <tr><td class="ce" rowspan="10" id="imagemDoDia" onmouseover="mudaFoto('tower_of_god.jpg')" onmouseout="mudaFoto('shokugeki_no_soma.jpg')">Sábado</td><td class="cd">Major</td></tr>
             <tr><td class="cd">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei Shiteshimatta...</td></tr>
             <tr><td class="cd">Yesterday wo Utatte</td></tr>
             <tr><td class="cd">Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen</td></tr>

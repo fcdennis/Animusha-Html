@@ -8,7 +8,7 @@ body {
 }
 
 div#interface{
-    width: 1180px;
+    width: 75em;
     margin: auto;
 }
 
@@ -145,7 +145,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -5px;
-    right: 290px;
+    right: 22em;
 }
 
 nav#menu li {
