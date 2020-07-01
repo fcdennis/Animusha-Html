@@ -210,3 +210,8 @@ table#calendario caption {
     color: purple;
     margin-bottom: 5px;
 }
+
+div.radionomy-player {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
