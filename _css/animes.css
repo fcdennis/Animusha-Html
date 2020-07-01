@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative&family=Luckiest+Guy&family=Special+Elite&family=Roboto&family=Ubuntu+Mono:ital@1&display=swap');
+
+ul#animes_imagens {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#animes_imagens li{
+    float: left;
+    width: 125px;
+    height: 125px;
+    margin: 10px;
+    border: 5px solid black;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease-in;
+}
+
+ul#animes_imagens li :hover{
+    transform: scale(1.5);
+}
+
+ul#animes_imagens li :hover span{
+    opacity: 1;
+}
+
+ul#animes_imagens li span{
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#animes_imagens li#animes_img1{
+    background: url(../_imagens/naruto.jpg);
+    background-position: 50% 50%;
+    background-size: 620px 366px;
+    background-color: white;
+}
+
+ul#animes_imagens li#animes_img1 :hover{
+    background-position: 0px 0px;
+    background-size: 125px 125px;
+}
