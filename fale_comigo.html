@@ -1,28 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Curso-Html5-Curso-em-Video/_css/_index.css">
-    <title>Animusha</title>
+    <link rel="stylesheet" href="_css/style.css" />
+    <link rel="stylesheet" href="_css/fale_comigo.css">
+    <title>Fale Comigo</title>
 </head>
+
 <body>
-    <header>
-          <nav id="menu">
-            <ul>
-                <h1>Menu Principal</h1>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="animes.html" target="_self">Animes</a></li>
-                <li><a href="games.html" target="_self">Games</a></li>
-                <li><a href="filmes.html" target="_self">Filmes</a></li>
-                <li><a href="series.html" target="_self">Séries</a></li>
-            </ul>
-        </nav>
-    <h1>Animusha</h1>
-    <h2>Os melhores animes que eu já assisti</h2>
-    </header>
-    <main>
-        <h3>Fale Comigo</h3>
-    </main>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Animusha</h1>
+                <h2>Animes, Games, Filmes e Séries</h2>
+            </hgroup>
+            <nav id="menu">
+                <ul>
+                    <h1>Menu Principal</h1>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="animes.html" target="_self">Animes</a></li>
+                    <li><a href="games.html" target="_self">Games</a></li>
+                    <li><a href="filmes.html" target="_self">Filmes</a></li>
+                    <li><a href="series.html" target="_self">Séries</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h3>Deixe sua mensagem!</h3>
+            <div id="formulario">
+                <form method="POST">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <p><label for="nome">Nome</label></p><input type="text" name="Nome" id="dpNome" size="25"
+                            maxlength="50" placeholder="Nome Completo" />
+                        <p><label for="email">E-mail</label></p><input type="email" name="email" id="dpEmail" size="25"
+                            maxlength="50" placeholder="Digite seu e-mail">
+                        <p><label for="senha">Senha</label></p><input type="password" name="Senha" id="dpSenha"
+                            size="20" placeholder="Senha" />
+                        <p><label for="dataNascimento">Data de Nascimento</label></p><input type="date" name="dpData" />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Assunto</legend>
+                        <input type="radio" name="tema" id="aTema"><label for="assunto">Animes</label>
+                        <input type="radio" name="tema" id="aTema"><label for="assunto">Games</label>
+                        <input type="radio" name="tema" id="aTema"><label for="assunto">Filmes</label>
+                        <input type="radio" name="tema" id="aTema"><label for="assunto">Séries</label>
+                        <input type="radio" name="tema" id="aTema"><label for="assunto">Outra Coisa</label>
+                        <p><label for="mensagem">Diga-me o que queres</label></p><textarea name="mensagem"
+                            id="aMensagem" placeholder="Escreva sua mensgaem" spellcheck="true" rows="5" cols="10"
+                            maxlength="1000"></textarea>
+                        <p></p><input type="checkbox" id="aCheckbox" checked /><label for="cookies" id="warning">Li
+                            todos os termo e Aceito as condições</label>
+                        <p></p><input type="checkbox" id="aCheckbox" checked><label for="mail list" id="warning">Aceito
+                            receber o e-mail com informações semanais do site.</label>
+                        <p></p><input type="submit" value="Enviar" id="aEnviar" />
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </div>
 </body>
+
 </html>
