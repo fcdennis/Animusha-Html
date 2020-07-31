@@ -3,222 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="index" content="Página Inicial do Projeto">
-    <title>Animusha - O melhor da cultura nerd!</title>
-    <link rel="stylesheet" href="_css/style.css">
-    <link rel="stylesheet" href="_css/index.css">
-    <script language="javascript" src="_script/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="altindex.css">
+    <title>Animusha | Otaku</title>
 </head>
 
 <body>
-    <div id="interface">
-        <header id="cabecalho">
-            <hgroup>
-                <h1>Animusha</h1>
-                <h2>Animes, Games, Filmes e Séries</h2>
-            </hgroup>
-            <nav id="menu">
-                <ul>
-                    <h1>Menu Principal</h1>
-                    <li><a href="animes.html" target="_self">Animes</a></li>
-                    <li><a href="games.html" target="_self">Games</a></li>
-                    <li><a href="filmes.html" target="_self">Filmes</a></li>
-                    <li><a href="series.html" target="_self">Séries</a></li>
-                    <li><a href="fale_comigo.html" target="_self">Fale Comigo</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="artigos">
-                <h3>O melhor da cultura Nerd você encontra aqui!</h3>
-                <article id="capa">
-                    <h4>Os melhores animes que eu já vi!</h4>
-                    <p>Uma relação com os melhores animes da minha vida</p>
-                    <figure class="imagens">
-                        <img src="_imagens/shokugeki_no_soma.jpg" id="imagemDoDia">
-                        <figcaption>Grandes Animes</figcaption>
-                        </figureclass>
+    <section id="container">
+        <div class="display header">
+            <header id="header-content">
+                <hgroup>
+                    <h1>Animusha</h1>
+                    <h2>Animes, Games, Filmes e Séries</h2>
+                </hgroup>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="animes.html" target="_self">Animes</a></li>
+                        <li><a href="games.html" target="_self">Games</a></li>  
+                        <li><a href="filmes.html" target="_self">Filmes</a></li>                   
+                        <li><a href="series.html" target="_self">Séries</a></li>
+                        <li><a href="fale_comigo.html" target="_self">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="display content">
+            <main>
+                <article>
+                    <h3>Os melhores Animes da Temporada!</h3>
                 </article>
-                <article id="capa">
-                    <h4>Os games que você tem que detonar!</h4>
-                    <p>Uma seleção de jogos que marcaram as gerações</p>
-                    <figure class="imagens">
-                        <img src="_games/witcher3_peq.jpg" alt="The Witcher 3">
-                        <figcaption>The Witcher 3 - Wild Hunt</figcaption>
-                    </figure>
-                </article>
-                <article id="capa">
-                    <h4>Os filmes que amamos!</h4>
-                    <p>Uma seleção de filmes para quem gosta de ação e aventura</p>
-                    <figure class="imagens">
-                        <img src="_filmes/star_wars_epIV_anh_peq.jpg" alt="Star Wars">
-                        <figcaption>Star Wars: Ep. IV A New Hope</figcaption>
-                    </figure>
-                </article>
-                <article id="capa">
-                    <h4>Séries para maratonar</h4>
-                    <p>As séries que realmente valem o seu tempo</p>
-                    <figure class="imagens">
-                        <img src="_series/GameofThrones.png" alt="Game of Thrones">
-                        <figcaption>Game of Thrones</figcaption>
-                    </figure>
-                </article>
-            </section>
-            <aside id="lateral">
-                <table id="calendario">
-                    <caption>Calendario de lançamentos</caption>
-                    <tr>
-                        <td class="ce" rowspan="6" id="imagemDoDia" onmouseover="mudaFoto('naruto.jpg')"
-                            onmouseout="mudaFoto('shokugeki_no_soma.jpg')"> Domingo</td>
-                        <td class="cd">Tsugu Tsugomomo</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Boruto</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Kigdom</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Gleipnir</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Yu-Gi-Oh! : Sevens</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Shachou, Battle no Jikan Desu!</td>
-                    </tr>
-                    <tr>
-                        <td class="ce" rowspan="4" id="imagemDoDia" onmouseover="mudaFoto('bleach.jpg')"
-                            onmouseout="mudaFoto('shokugeki_no_Soma.jpg')">Segunda</td>
-                        <td class="cd">Fruits Basket</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Shironeko Project: Zero Chronicle</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Jasmin-chan Gropkick</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">A3!</td>
-                    </tr>
-                    <tr>
-                        <td class="ce" rowspan="3" id="imagemDoDia" onmouseover="mudaFoto('dragon_ball_super.jpg')"
-                            onmouseout="mudaFoto('shokugeki_no_soma.jpg')">Terça</td>
-                        <td class="cd">Black Cover</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Shadowverse</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Houkago Teibou Nisshi</td>
-                    </tr>
-                    <tr>
-                        <td class="ce" rowspan="4" id="imagemDoDia" onmouseover="mudaFoto('dr_stone.jpg')"
-                            onmouseout="mudaFoto('shokugeki_no_soma.jpg')">Quarta</td>
-                        <td class="cd">Appare-Ranman!</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Tamayomi</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Plunderer</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Tower of God</td>
-                    </tr>
-                    <tr>
-                        <td class="ce" rowspan="5" id="imagemDoDia" onmouseover="mudaFoto('kimetsu_no_yaiba.jpg')"
-                            onmouseout="mudaFoto('shokugeki_no_soma.jpg')">Quinta</td>
-                        <td class="cd">Kakushigoto</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Hachi-nan tte</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Sore wa Nai deshou!</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Fugou Keiji: Balance: Unlimited</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Gudam Build Drivers Re:Rise</td>
-                    </tr>
-                    <tr>
-                        <td class="ce" rowspan="5" id="imagemDoDia" onmouseover="mudaFoto('my_hero_academia.jpg')"
-                            onmouseout="mudaFoto('shokugeki_no_soma.jpg')">Sexta</td>
-                        <td class="cd">Shin Sakura Taisen</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Bungou to Alchemist: Shinpan no Haguruma</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Listeners</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Zashiki Warashi no Tatami-chan</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Nami yo Kiitekure</td>
-                    </tr>
-                    <tr>
-                        <td class="ce" rowspan="10" id="imagemDoDia" onmouseover="mudaFoto('tower_of_god.jpg')"
-                            onmouseout="mudaFoto('shokugeki_no_soma.jpg')">Sábado</td>
-                        <td class="cd">Major</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei Shiteshimatta...
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Yesterday wo Utatte</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Digmon Adventure</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">One Piece</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Gal to Kyouryuu</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Arte</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Sol Levante</td>
-                    </tr>
-                    <tr>
-                        <td class="cd">Kaguya-sama</td>
-                    </tr>
-                </table>
-                <h4>Mais sobre animes</h4>
-                <figure class="miniaturas">
-                    <a href="animes.html"><img src="_imagens/my_hero_academia.jpg" alt="my_hero_academia"></a>
-                </figure>
-                <h4>Mais sobre games</h4>
-                <figure class="miniaturas">
-                    <a href="games.html"><img src="_games/gta5_trevor.jpg" alt="gta5_trevor"></a>
-                </figure>
-                <h4>Mais sobre filmes</h4>
-                <figure class="miniaturas">
-                    <a href="filmes.html"><img src="_filmes/star_wars_epIV_anh_peq.jpg" alt="Star_Wars"></a>
-                </figure>
-                <h4>Mais sobre séries</h4>
-                <figure class="miniaturas">
-                    <a href="series.html"><img src="_series/alias_peq.jpg" alt="Alias"></a>
-                </figure>
-            </aside>
-            <footer>
-                <p>Fonte das imagens dos animes: <a href="https://www.aficionados.com.br/animes-mais-assistidos-mundo/"
-                        target="_blank">Aficionados</a></p>
-                <p>Fonte das imagens de Filmes e Séries: <a href="https://forum.blu-ray.com/showthread.php?t=220892"
-                        target="_blank">Fórum Blue-Ray</a></p>
-            </footer>
-        </main>
-    </div>
+            </main>
+        </div>
+        <div class="display complement">
+            <aside>Calendário da Temporada</aside>
+        </div>
+        <div class="display footer">
+            <p>Animusha &copy;Todos os Direitos Reservados - 2020</p>
+        </div>
+    </section>
 </body>
 
 </html>
