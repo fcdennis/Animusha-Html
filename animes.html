@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15">
     <link rel="stylesheet" href="_css/style.css">
     <link rel="stylesheet" href="_css/animes.css">
-    <script lang="javascript" src="_script/script.js"></script>
+    <script lang="javascript" src="_script/animes.js"></script>
     <title>Animusha - Animes</title>
 </head>
 
@@ -30,17 +31,14 @@
         </header>
         <main>
             <h3 id="sectionTitle">Animes</h3>
-        <section id="slide">
-            <h4>
-                Aqui entra um texto ou imagem
-            </h4>
-            <figure class="animes">
-                <img id="anime" src="_imagens/kimetsu_no_yaiba.jpg" alt="animes">
-                <figcaption>
-                    Animes que marcam época!
-                </figcaption>
-            </figure>
-        </section>
+            <section id="slide">
+                <figure class="animes" onclick="mudaImagemA()" onmouseover="mudaImagemB()" onmouseout="mudaImagemC()">
+                    <img id="anime" src="_imagens/kimetsu_no_yaiba.jpg" alt="animes">
+                    <figcaption id="legenda">
+                        Kimetsu no Yaiba
+                    </figcaption>
+                </figure>
+            </section>
         </main>
     </div>
 </body>
