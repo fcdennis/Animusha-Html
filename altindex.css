@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 0.625rem;
+}
+
+body{
+    background-color:  #080AFF;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: auto 2fr 1fr auto;
+
+    
+    width: 100vw;
+    height: 100vh;
+    margin: 0px auto;    
+}
+
+.display {
+    margin: 1px;
+    background:#AAAFFF;
+    font-size: 2.5rem;
+}
+
+@media (min-width: 800px){
+    #container {
+        display: grid;
+        grid-template: 
+        "header header" auto
+        "content complement" 1fr
+        "footer footer" auto
+        / 3fr minmax(100px, 25%);
+    }
+    
+    .header {
+        grid-area: header;
+    }
+    
+    .content {
+        grid-area: content;
+    }
+    
+    .complement {
+        grid-area: complement;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+
+    #header-content h1 {
+        font-size: 5rem;
+    }
+
+    #menu li{
+        font-size: ;
+    }
+}
+
+#header-content {
+    background-image: linear-gradient(to top, rgba(255,255,0,0.3), rgba(0,0,255,0.1)), url(../_imagens/animes.jpg);
+    box-shadow: 3px 3px 5px black;
+    padding: 10px;
+
+    display: block;
+    text-align: end;
+}
+
+#header-content h1{
+    color: #F0FA00;
+    font-size: 2em;
+}
+
+#header-content h2 {
+    color: #0A0AFF;
+    font-size: 1.25em;
+}
+
+#menu {
+    display: inline;
+}
+
+#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#menu li {
+    display: inline;
+    font-size: 1em;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #000;
+}
