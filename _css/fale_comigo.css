@@ -1,33 +1,58 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative&family=Luckiest+Guy&family=Special+Elite&family=Roboto&family=Ubuntu+Mono:ital@1&display=swap');
 
-h3{
-    text-align: center;
-    margin-top: 5px;
+#fieldset *{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
 }
 
-fieldset{
-    width: 800px;
-    margin: auto;
-    padding: 10px;
+.fieldset-header {
     font-family: "Luckiest Guy";
-    font-size: 18pt;
+    font-size: 2rem;
 }
 
-label{
-    font-family: "Ubuntu Mono";
-    font-size: 14pt;
+.fieldset-input-data {
+    font-family: 'Ubuntu Mono';
+    font-size: 2.25rem;
 }
 
-textarea{
+#label-options {
+    width: 98%;
+    display:flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.label-text {
+    font-family: 'Cinzel Decorative';
+    font-size: 1.25rem;
+    font-weight: 650;
+}
+
+#fieldset-text-area-caller {
+    margin: 1.5rem;
+    font-size: 2.5rem;
+    font-family: 'Cinzel Decorative';
+    font-weight: 800;
+}
+
+#fieldset-text-area{
+    margin: 1rem;
     resize: none;
-    width: 500px;
+    width: 95%;
 }
 
-label#warning {
-    font-size: 10pt;
+#warning {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu Mono';
+    margin-bottom: 1rem;
 }
 
-label#aEnviar{
-    margin: auto;
+#sent-button{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Ubuntu Mono';
+
 }

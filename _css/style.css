@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative&family=Luckiest+Guy&family=Special+Elite&family=Roboto&family=Ubuntu+Mono:ital@1&display=swap');
 
+/* Structural Elements */
 *{
     margin: 0;
     padding: 0;
@@ -11,38 +12,37 @@
 }
 
 body{
-    background-color:  #1515FC;
+    background-color:  #3030FF;
 }
 
 #container {
     display: grid;
     grid-template-rows: auto 2fr 1fr auto;
 
-    
-    width: 100vw;
+    width: 97vw;
     height: 100vh;
     margin: 0px auto;    
 }
 
 .display {
     margin: 1px;
-    background:#AAAFFF;
 }
 
+/* Responsive Design */
 @media (min-width: 800px){
     :root{
         font-size: 0.9em;
     }
 
     #container {
-        width: 80vw;
+        width: 70vw;
 
         display: grid;
         grid-template: 
         "header header" auto
         "content complement" 1fr
         "footer footer" auto
-        / 3fr minmax(100px, 25%);
+        / 3fr minmax(250px, 25%);
     }
     
     .header {
@@ -62,8 +62,7 @@ body{
     }
 }
 
-
-/* Cabeçalho */
+/* Header */
 #header-content {
     background-image: linear-gradient(to top, rgba(255,255,0,0.3), rgba(0,0,255,0.1)), url(../_animes/animes.jpg);
     box-shadow: 3px 3px 5px black;
@@ -76,7 +75,7 @@ body{
 #header-content h1{
     color: #0A0A0A;
     font-size: 3em;    
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Cinzel Decorative';
     text-shadow:  1px 1px 1px #FDFDFD;
     margin: -0.3em 0em;
 }
@@ -84,7 +83,7 @@ body{
 #header-content h2 {
     color: #FDFDFD;
     font-size: 2em;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Audiowide';
     text-shadow:  1px 1px 1px #0A0A0A;
     margin-top: 1px;
 }
@@ -107,15 +106,40 @@ body{
 }
 
 #menu a {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy';
     color: #FDFDFD;
     text-decoration: none;
 }
 
-nav#menu li:hover {
+#menu li:hover {
     background-color: #FDFDFD;
 }
 
-nav#menu a:hover{
+#menu a:hover{
     color: #0A0A0A;
+}
+
+/* Footer Text */
+.footer-text {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: #AAAA00;
+}
+
+.footer-references {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: #AAAA00;
+    text-decoration: none;
+}
+
+/* Ad image */
+#img-ad {
+    width: 100%;
+}
+
+@media (min-width: 800px){
+    #img-ad {
+        margin-top: 1.25rem;
+    }
 }
