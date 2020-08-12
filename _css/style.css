@@ -1,48 +1,59 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative&family=Luckiest+Guy&family=Special+Elite&family=Roboto&family=Ubuntu+Mono:ital@1&display=swap');
 
+/* Structural Elements */
 *{
     margin: 0;
     padding: 0;
 }
 
 :root{
+    --grape: #48225C;
+    --vermillion: #FA4812;
+    --tottem-pole: #961C06;
+    --pistachio: #A0A607;
+    --camarone: #02731B;
+    --caper: #DBEDAC;
+    --flame-pea: #DF6234;
+    --tabasco:#942810;
+    --electric-violet: #7C01F8;
+    --sea-buckthorn: #F9A72C;
+
     font-size: 0.625rem;
 }
 
 body{
-    background-color:  #1515FC;
+    background-color: var(--grape);
 }
 
 #container {
     display: grid;
     grid-template-rows: auto 2fr 1fr auto;
 
-    
-    width: 100vw;
+    width: 97vw;
     height: 100vh;
     margin: 0px auto;    
 }
 
 .display {
     margin: 1px;
-    background:#AAAFFF;
 }
 
+/* Responsive Design */
 @media (min-width: 800px){
     :root{
         font-size: 0.9em;
     }
 
     #container {
-        width: 80vw;
+        width: 70vw;
 
         display: grid;
         grid-template: 
         "header header" auto
         "content complement" 1fr
         "footer footer" auto
-        / 3fr minmax(100px, 25%);
+        / 3fr minmax(250px, 25%);
     }
     
     .header {
@@ -62,11 +73,10 @@ body{
     }
 }
 
-
-/* Cabeçalho */
+/* Header */
 #header-content {
     background-image: linear-gradient(to top, rgba(255,255,0,0.3), rgba(0,0,255,0.1)), url(../_animes/animes.jpg);
-    box-shadow: 3px 3px 5px black;
+    box-shadow: 3px 3px 5px var(--camarone);
     padding: 10px;
 
     display: block;
@@ -74,18 +84,18 @@ body{
 }
 
 #header-content h1{
-    color: #0A0A0A;
+    color: var(--camarone);
     font-size: 3em;    
-    font-family: 'Cinzel Decorative', cursive;
-    text-shadow:  1px 1px 1px #FDFDFD;
+    font-family: 'Cinzel Decorative';
+    text-shadow:  1px 1px 1px var(--caper);
     margin: -0.3em 0em;
 }
 
 #header-content h2 {
-    color: #FDFDFD;
+    color: var(--sea-buckthorn);
     font-size: 2em;
-    font-family: 'Audiowide', cursive;
-    text-shadow:  1px 1px 1px #0A0A0A;
+    font-family: 'Audiowide';
+    text-shadow:  1px 1px 1px var(--grape);
     margin-top: 1px;
 }
 
@@ -101,21 +111,46 @@ body{
 #menu li {
     display: inline;
     font-size: 1.75em;
-    background-color: #0A0A0A;
+    background-color: var(--electric-violet);
     padding: 2px;
     margin: 1px;
 }
 
 #menu a {
-    font-family: 'Luckiest Guy', cursive;
-    color: #FDFDFD;
+    font-family: 'Luckiest Guy';
+    color: var(--caper);
     text-decoration: none;
 }
 
-nav#menu li:hover {
-    background-color: #FDFDFD;
+#menu li:hover {
+    background-color: var(--tottem-pole);
 }
 
-nav#menu a:hover{
+#menu a:hover{
     color: #0A0A0A;
+}
+
+/* Footer Text */
+.footer-text {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: #AAAA00;
+}
+
+.footer-references {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: #AAAA00;
+    text-decoration: none;
+}
+
+/* Ad image */
+#img-ad {
+    width: 100%;
+}
+
+@media (min-width: 800px){
+    #img-ad {
+        margin-top: 1.25rem;
+    }
 }
