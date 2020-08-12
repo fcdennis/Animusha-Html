@@ -1,20 +1,20 @@
 function mudaImagemA() {
     let img = window.document.querySelector('img#anime')
-    img.src = "_imagens/naruto.jpg"
+    img.src = "_animes/naruto.jpg"
     let legenda = document.querySelector('figcaption#legenda')
     legenda.innerHTML = 'Naruto'
 }
 
 function mudaImagemB() {
     let img = window.document.querySelector('img#anime')
-    img.src = "_imagens/tower_of_god.jpg"
+    img.src = "_animes/bleach.jpg"
     let legenda = document.querySelector('figcaption#legenda')
-    legenda.innerHTML = 'Tower of God'
+    legenda.innerHTML = 'Bleach'
 }
 
 function mudaImagemC() {
     let img = window.document.querySelector('img#anime')
-    img.src = "_imagens/haikyuu.jpg"
+    img.src = "_animes/haikyuu.jpg"
     let legenda = document.querySelector('figcaption#legenda')
     legenda.innerHTML = 'Haikyuu'
 }

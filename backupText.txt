@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_css/style.css">
-    <link rel="stylesheet" href="_css/index.css">
+    <link rel="stylesheet" href="altindex.css">
+    <link rel="stylesheet" href="/_css/index.css">
     <title>Animusha | Otaku</title>
 </head>
 
@@ -35,32 +35,32 @@
                     <h4>Os melhores animes que eu já vi!</h4>
                     <p>Uma relação com os melhores animes da minha vida</p>
                     <figure class="imagens">
-                        <img src="_animes/dr_stone.jpg" id="Doctor Stone">
-                        <figcaption>Dr. Stone</figcaption>
+                        <img src="_imagens/shokugeki_no_soma.jpg" id="imagemDoDia">
+                        <figcaption>Grandes Animes</figcaption>
                         </figureclass>
                 </article>
                 <article id="capa">
                     <h4>Os games que você tem que detonar!</h4>
                     <p>Uma seleção de jogos que marcaram as gerações</p>
                     <figure class="imagens">
-                        <img src="_games/lohTrialsofColdSteel.jpg" alt="Trials of Cold Steel">
-                        <figcaption>The Legend of Heroes: Trials of Cold Steel</figcaption>
+                        <img src="_games/witcher3_peq.jpg" alt="The Witcher 3">
+                        <figcaption>The Witcher 3 - Wild Hunt</figcaption>
                     </figure>
                 </article>
                 <article id="capa">
                     <h4>Os filmes que amamos!</h4>
                     <p>Uma seleção de filmes para quem gosta de ação e aventura</p>
                     <figure class="imagens">
-                        <img src="_filmes/myHeroAcademiaTwoHeroes.jpg" alt="My Hero Academia Two Heroes Movie">
-                        <figcaption>My Hero Academia Two Heroes</figcaption>
+                        <img src="_filmes/star_wars_epIV_anh_peq.jpg" alt="Star Wars">
+                        <figcaption>Star Wars: Ep. IV A New Hope</figcaption>
                     </figure>
                 </article>
                 <article id="capa">
-                    <h4>Live Action</h4>
-                    <p>Nem tudo são flores</p>
+                    <h4>Séries para maratonar</h4>
+                    <p>As séries que realmente valem o seu tempo</p>
                     <figure class="imagens">
-                        <img src="_liveAction/bleachLA.jpg" alt="Bleach">
-                        <figcaption>Bleach</figcaption>
+                        <img src="_series/GameofThrones.png" alt="Game of Thrones">
+                        <figcaption>Game of Thrones</figcaption>
                     </figure>
                 </article>
             </main>
@@ -196,18 +196,32 @@
                         <td class="cd">Kaguya-sama</td>
                     </tr>
                 </table>
+                <h4>Mais sobre animes</h4>
+                <figure class="miniaturas">
+                    <a href="animes.html"><img src="_imagens/my_hero_academia.jpg" alt="my_hero_academia"></a>
+                </figure>
+                <h4>Mais sobre games</h4>
+                <figure class="miniaturas">
+                    <a href="games.html"><img src="_games/gta5_trevor.jpg" alt="gta5_trevor"></a>
+                </figure>
+                <h4>Mais sobre filmes</h4>
+                <figure class="miniaturas">
+                    <a href="filmes.html"><img src="_filmes/star_wars_epIV_anh_peq.jpg" alt="Star_Wars"></a>
+                </figure>
+                <h4>Mais sobre séries</h4>
+                <figure class="miniaturas">
+                    <a href="series.html"><img src="_series/alias_peq.jpg" alt="Alias"></a>
+                </figure>
             </aside>
         </div>
         <div class="display footer">
-            <p>Fonte das imagens: 
-                <a href="https://www.google.com" target="_blank">Google</a>
-                <a href="https://www.aficionados.com.br/animes-mais-assistidos-mundo/"
-                    target="_blank">Aficionados</a>
-                </p>
+            <p>Fonte das imagens dos animes: <a href="https://www.aficionados.com.br/animes-mais-assistidos-mundo/"
+                    target="_blank">Aficionados</a></p>
+            <p>Fonte das imagens de Filmes e Séries: <a href="https://forum.blu-ray.com/showthread.php?t=220892"
+                    target="_blank">Fórum Blue-Ray</a></p>
             <p>Animusha &copy;Todos os Direitos Reservados - 2020</p>
         </div>
     </section>
 </body>
-<script src="_script/animes.js"></script>
 
 </html>

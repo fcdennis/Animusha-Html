@@ -101,7 +101,6 @@ table#calendario td {
 table#calendario .ce {
     font-family: 'Special Elite', cursive;
     font-size: 16px;
-    text-align: right;
     color: firebrick;
     background-color: lightcyan;
 }
@@ -109,7 +108,6 @@ table#calendario .ce {
 table#calendario .cd {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    text-align: left;
     color: blueviolet;
     background-color: wheat
 }

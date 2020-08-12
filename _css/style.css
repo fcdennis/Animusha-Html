@@ -1,88 +1,121 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative&family=Luckiest+Guy&family=Special+Elite&family=Roboto&family=Ubuntu+Mono:ital@1&display=swap');
 
-/* Elementos Estruturais */
-
-body {
-    background-color: indigo;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-main {
-    background-color: gray;
+:root{
+    font-size: 0.625rem;
+}
+
+body{
+    background-color:  #1515FC;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: auto 2fr 1fr auto;
+
+    
+    width: 100vw;
+    height: 100vh;
+    margin: 0px auto;    
+}
+
+.display {
+    margin: 1px;
+    background:#AAAFFF;
+}
+
+@media (min-width: 800px){
+    :root{
+        font-size: 0.9em;
+    }
+
+    #container {
+        width: 80vw;
+
+        display: grid;
+        grid-template: 
+        "header header" auto
+        "content complement" 1fr
+        "footer footer" auto
+        / 3fr minmax(100px, 25%);
+    }
+    
+    .header {
+        grid-area: header;
+    }
+    
+    .content {
+        grid-area: content;
+    }
+    
+    .complement {
+        grid-area: complement;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+}
+
+
+/* Cabeçalho */
+#header-content {
+    background-image: linear-gradient(to top, rgba(255,255,0,0.3), rgba(0,0,255,0.1)), url(../_animes/animes.jpg);
     box-shadow: 3px 3px 5px black;
     padding: 10px;
-}
 
-div#interface{
-    width: 75em;
-    margin: auto;
-}
-
-header{
-    background-image: linear-gradient(to top, rgba(255,255,0,0.3), rgba(0,0,255,0.1)), url(../_imagens/animes.jpg);
-    box-shadow: 3px 3px 5px black;
-    padding: 10px;
-}
-
-footer {
-    clear: both;
-    border-top: 3px solid black;
-}
-
-/* Elementos de Textos*/
-
-header#cabecalho h1 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 32px;
-    text-align: right;
-    color: whitesmoke;
-    text-shadow: black;
-    margin-bottom: 0px;
-}
-
-header#cabecalho h2 {
-    font-family: 'Audiowide', cursive;
-    font-size: 24px;
-    text-align: right;
-    color: black;
-    margin-top: 0px;
-}
-
-/* Elementos de Menu */
-
-nav#menu {
     display: block;
+    text-align: end;
 }
 
-nav#menu ul {
+#header-content h1{
+    color: #0A0A0A;
+    font-size: 3em;    
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow:  1px 1px 1px #FDFDFD;
+    margin: -0.3em 0em;
+}
+
+#header-content h2 {
+    color: #FDFDFD;
+    font-size: 2em;
+    font-family: 'Audiowide', cursive;
+    text-shadow:  1px 1px 1px #0A0A0A;
+    margin-top: 1px;
+}
+
+#menu {
+    display: inline;
+}
+
+#menu ul {
     list-style: none;
     text-transform: uppercase;
-    position: absolute;
-    top: -5px;
-    right: 22em;
 }
 
-nav#menu li {
+#menu li {
     display: inline;
-    background-color: black;
-    padding: 5px;
+    font-size: 1.75em;
+    background-color: #0A0A0A;
+    padding: 2px;
     margin: 1px;
 }
 
-nav#menu h1 {
-    display: none;
-}
-
-nav#menu a{
+#menu a {
     font-family: 'Luckiest Guy', cursive;
-    color: white;
+    color: #FDFDFD;
     text-decoration: none;
 }
 
 nav#menu li:hover {
-    background-color: white;
+    background-color: #FDFDFD;
 }
 
 nav#menu a:hover{
-    color: black;
+    color: #0A0A0A;
 }
