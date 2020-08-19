@@ -8,22 +8,26 @@
 }
 
 :root{
-    --grape: #48225C;
-    --vermillion: #FA4812;
-    --tottem-pole: #961C06;
-    --pistachio: #A0A607;
-    --camarone: #02731B;
-    --caper: #DBEDAC;
-    --flame-pea: #DF6234;
-    --tabasco:#942810;
-    --electric-violet: #7C01F8;
-    --sea-buckthorn: #F9A72C;
-
+    --background-body: #48225C;
+    --background-main: #FA4812;
+    --background-div: #961C06;
+    --header-h1: #C7FCD2;
+    --header-h2: #DBEDAC;
+    --main-h3: #7C01F8;
+    --main-h4: #DF6234;
+    --main-p: #942810;
+    --footer-p: #A0A607;
+    --link: #F9A72C;
+    --menu-txt1: #DDC732;
+    --menu-txt2: #572A74; 
+    --menu-background1: #214CDB;
+    --menu-background2: #02731B;
+    
     font-size: 0.625rem;
 }
 
 body{
-    background-color: var(--grape);
+    background-color: var(--background-body);
 }
 
 #container {
@@ -75,8 +79,8 @@ body{
 
 /* Header */
 #header-content {
-    background-image: linear-gradient(to top, rgba(255,255,0,0.3), rgba(0,0,255,0.1)), url(../_animes/animes.jpg);
-    box-shadow: 3px 3px 5px var(--camarone);
+    background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(255, 255, 0, 0.3)), url(../_images/_animes/animes.jpg);
+    box-shadow: 3px 3px 5px var(--background-div);
     padding: 10px;
 
     display: block;
@@ -84,18 +88,20 @@ body{
 }
 
 #header-content h1{
-    color: var(--camarone);
+    color: var(--header-h1);
+    font-weight: 900;
     font-size: 3em;    
     font-family: 'Cinzel Decorative';
-    text-shadow:  1px 1px 1px var(--caper);
+    text-shadow:  1px 1px 1px var(--background-div);
     margin: -0.3em 0em;
 }
 
 #header-content h2 {
-    color: var(--sea-buckthorn);
+    color: var(--header-h2);
+    font-weight: 900;
     font-size: 2em;
     font-family: 'Audiowide';
-    text-shadow:  1px 1px 1px var(--grape);
+    text-shadow:  1px 1px 1px var(--background-div);
     margin-top: 1px;
 }
 
@@ -111,23 +117,23 @@ body{
 #menu li {
     display: inline;
     font-size: 1.75em;
-    background-color: var(--electric-violet);
+    background-color: var(--menu-background1);
     padding: 2px;
     margin: 1px;
 }
 
 #menu a {
     font-family: 'Luckiest Guy';
-    color: var(--caper);
+    color: var(--menu-txt1);
     text-decoration: none;
 }
 
 #menu li:hover {
-    background-color: var(--tottem-pole);
+    background-color: var(--menu-background2);
 }
 
 #menu a:hover{
-    color: #0A0A0A;
+    color: var(--link);
 }
 
 /* Footer Text */
@@ -140,7 +146,7 @@ body{
 .footer-references {
     font-family: 'Roboto';
     font-size: 1.5rem;
-    color: #AAAA00;
+    color: var(--footer-p);
     text-decoration: none;
 }
 
