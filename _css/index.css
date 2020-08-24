@@ -4,21 +4,9 @@
     border-right: 5px solid black;
 }
 
-#lateral {
+#lateral_ad {
     display: block;
-    margin-top: 1rem;
-}
-
-.main-content-title {
-    width: 90%;
-    margin: 0.5rem auto;
-}
-
-.main-element-content-title {
-    margin: auto;
-    padding: auto;
-    width: 90%;
-    background-color: #FAFAFA;
+    margin-top: 1.75rem;
 }
 
 /* Elementos de texto */
@@ -27,8 +15,14 @@
     font-size: 2.15rem;
     color: #FF3333;
     text-shadow: 1px 1px 1px #FF1111;
-    text-align: center;
+    text-align: initial;
+
+    margin: auto;
+    padding: auto;
+    width: 70%;
+    background-color: #FAFAFA;
 }
+
 .main-element-content-title h4{
     font-family: 'Ubuntu Mono';
     font-size: 2rem;
@@ -39,8 +33,6 @@
 
     margin: auto;
 }
-
-
 
 /* Elementos de imagem */
 
