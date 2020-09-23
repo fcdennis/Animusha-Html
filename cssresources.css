@@ -1,0 +1,39 @@
+/* Fonts sources */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Comfortaa:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap');
+
+/* 
+font-family: 'Caveat', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Crimson Text', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+
+/*Colors VAR map */
+:root {
+    --blue: hsl(240, 100%, 50%);
+    --blue-light: hsl(240, 100%, 83.73%);
+    --blue-dark: hsl(240, 100%, 16.27%);
+    --green: hsl(120, 100%, 50%);
+    --green-light: hsl(120, 100%, 83.73%);
+    --green-dark: hsl(120, 100%, 16.27%);
+    --red: hsl(0, 100%, 50%);
+    --red-light: hsl(0, 100%, 83.73%);
+    --red-dark: hsl(0, 100%, 16.27%);
+
+    --cyan: hsl(180, 100%, 50%);
+    --cyan-light: hsl(180, 100%, 83.73%);
+    --cyan-dark: hsl(180, 100%, 16.27%);
+    --magenta: hsl(300, 100%, 50%);
+    --magenta-light: hsl(300, 100%, 83.73%);
+    --magenta-dark: hsl(300, 100%, 16.27%);
+    --yellow: hsl(60, 100%, 50%);
+    --yellow-light: hsl(60, 100%, 83.73%);
+    --yellow-dark: hsl(60, 100%, 16.27%);
+    
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --grey-light: hsl(0, 0%, 75%);
+    --grey-dark: hsl(0, 0%, 25%);
+    --black: hsl(0, 0%, 0%);
+}

@@ -1,0 +1,15 @@
+#call{
+    margin-top: 1rem;
+    text-align: center;
+}
+#call div {
+    display: inline;
+}
+#call img {
+    border-radius: 4px;
+    cursor: pointer;
+    height: 265px;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+}

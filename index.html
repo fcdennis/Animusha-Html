@@ -1,100 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_css/style.css">
-    <link rel="stylesheet" href="_css/index.css">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>Animusha | Otaku</title>
+
+    <link rel="stylesheet" href="cssreset.css">
+    <link rel="stylesheet" href="cssresources.css">
+    <link rel="stylesheet" href="containermain.css">
+    <link rel="stylesheet" href="indexstyle.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+        integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw=="
+        crossorigin="anonymous"></script>
+    <script id="trendinglist" type="text/x-handlebars-template">
+
+
+
+        </script>
 </head>
 
-<body id="container">
-
-    <nav class="display top">
-        <header id="header-content">
-            <hgroup>
-                <h1>Animusha</h1>
-                <h2>Animes, Games, Filmes e Séries</h2>
-            </hgroup>
-        </header>
-        <div id="menu">
+<body>
+    <header>
+        <hgroup>
+            <h1>Animusha</h1>
+        </hgroup>
+        <nav>
             <ul>
-                <li><a href="animes.html" target="_self">Animes</a></li>
-                <li><a href="games.html" target="_self">Games</a></li>
-                <li><a href="filmes.html" target="_self">Filmes</a></li>
-                <li><a href="series.html" target="_self">Séries</a></li>
-                <li><a href="fale_comigo.html" target="_self">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Animes</a></li>
+                <li><a href="">Mangas</a></li>
+                <li><a href="">Games</a></li>
             </ul>
-        </div>
-    </nav>
-
+        </nav>
+    </header>
     <main>
-        <header>
-            <h3 id="main-content-title">O melhor da cultura oriental</h3>
-        </header>
-
-        <div class="display main">
-            <section class="display content">
-                <article class="capa">
-                    <div class="main-element-content-title">
-                        <h4 class="main-element-content-title">Os melhores animes da temporada!</h4>
-                    </div>
-                    <figure class="imagens">
-                        <img src="_images/_animes/dr_stone.jpg" id="Doctor Stone">
-                        <figcaption>Dr. Stone</figcaption>
-                        </figureclass>
-                </article>
-                <article class="capa">
-                    <div class="main-element-content-title">
-                        <h4 class="main-element-content-title">JRPG's e muito mais</h4>
-                    </div>
-                    <figure class="imagens">
-                        <img src="_images/_games/lohTrialsofColdSteel.jpg" alt="Trials of Cold Steel">
-                        <figcaption>The Legend of Heroes: Trials of Cold Steel</figcaption>
+        <!--Search engine-->
+            <section id="call">
+                <div class="animes">
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption>Animes</figcaption>
                     </figure>
-                </article>
-                <article class="capa">
-                    <div class="main-element-content-title">
-                        <h4 class="main-element-content-title">Filmes e OVAS de animes!</h4>
-                    </div>
-                    <figure class="imagens">
-                        <img src="_images/_filmes/myHeroAcademiaTwoHeroes.jpg" alt="My Hero Academia Two Heroes Movie">
-                        <figcaption>My Hero Academia Two Heroes</figcaption>
+                </div>
+                <div class="mangas">
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption>Mangas</figcaption>
                     </figure>
-                </article>
-                <article class="capa">
-                    <div class="main-element-content-title">
-                        <h4 class="main-element-content-title">Live Action</h4>
-                    </div>
-                    <figure class="imagens">
-                        <img src="_images/_liveAction/bleachLA.jpg" alt="Bleach">
-                        <figcaption>Bleach</figcaption>
+                </div>
+                <div class="games">
+                    <figure>
+                        <img onload = setImage() alt="">
+                        <figcaption>Games</figcaption>
                     </figure>
-                </article>
-            </section>
-            <section class="display complement">
-                <div id="lateral_ad">
-                    <table id="season-content">
-                    </table>
-                    <img id="img-ad"
-                        src="https://images-americanas.b2w.io/spacey/acom/2020/08/07/niver20__banner3_cashback.png"
-                        alt="receba hoje">
                 </div>
             </section>
-        </div>
+            <div id="Top10">
+                <p>Top 10</p>
+            </div>
     </main>
-
-    <footer class="display footer">
-        <p class="footer-text">Fonte das imagens:
-            <a class="footer-references" href="https://www.google.com" target="_blank">Google</a>
-            <a class="footer-references" href="https://www.aficionados.com.br/animes-mais-assistidos-mundo/"
-                target="_blank">Aficionados</a></p>
-        <p class="footer-text">ESTE SITE TEM CARATER EDUCATIVO E SEM FINALIDADE COMERCIAL</p>
-        <p class="footer-text">Animusha &copy;Todos os Direitos Reservados - 2020</p>
+    <footer>
+        <p>&copy;Animusha - 2020</p>
     </footer>
 
+    <script src="animesIndex.js"></script>
 </body>
-<script src="_script/index.js"></script>
 
 </html>
