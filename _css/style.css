@@ -1,88 +1,142 @@
-@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative&family=Luckiest+Guy&family=Special+Elite&family=Roboto&family=Ubuntu+Mono:ital@1&display=swap');
 
-/* Elementos Estruturais */
-
-body {
-    background-color: indigo;
+/* Structural Elements */
+*{
+    margin: 0;
+    padding: 0;
 }
 
-main {
-    background-color: gray;
-    box-shadow: 3px 3px 5px black;
+:root{
+    --background-body: #00002A;
+    --background-main: navy;
+    --background-div: #ACACD5;
+    --header-h1: #C7FCD2;
+    --header-h2: #DBEDAC;
+    --main-h3: #7C01F8;
+    --main-h4: #DF6234;
+    --main-p: #942810;
+    --footer-p: #A0A607;
+    --link: #F9A72C;
+    --menu-txt1: #DDC732;
+    --menu-txt2: #572A74; 
+    --menu-background1: #214CDB;
+    --menu-background2: #02731B;
+    
+    font-size: 0.625rem;
+}
+
+body{
+    background-color: var(--background-body);
+}
+
+#container {
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+
+    width: 97vw;
+    height: 100vh;
+    margin: 0px auto;    
+}
+
+/* Header */
+#header-content {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(255, 255, 0, 0.3)), url(../_images/_animes/animes.jpg);
+    box-shadow: 3px 3px 5px var(--background-div);
     padding: 10px;
-}
 
-div#interface{
-    width: 75em;
-    margin: auto;
-}
-
-header{
-    background-image: linear-gradient(to top, rgba(255,255,0,0.3), rgba(0,0,255,0.1)), url(../_imagens/animes.jpg);
-    box-shadow: 3px 3px 5px black;
-    padding: 10px;
-}
-
-footer {
-    clear: both;
-    border-top: 3px solid black;
-}
-
-/* Elementos de Textos*/
-
-header#cabecalho h1 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 32px;
-    text-align: right;
-    color: whitesmoke;
-    text-shadow: black;
-    margin-bottom: 0px;
-}
-
-header#cabecalho h2 {
-    font-family: 'Audiowide', cursive;
-    font-size: 24px;
-    text-align: right;
-    color: black;
-    margin-top: 0px;
-}
-
-/* Elementos de Menu */
-
-nav#menu {
     display: block;
+    text-align: end;
 }
 
-nav#menu ul {
+#header-content h1{
+    color: var(--header-h1);
+    font-weight: 900;
+    font-size: 3em;    
+    font-family: 'Cinzel Decorative';
+    text-shadow:  1px 1px 1px var(--background-div);
+    margin: -0.3em 0em;
+}
+
+#header-content h2 {
+    color: var(--header-h2);
+    font-weight: 900;
+    font-size: 2em;
+    font-family: 'Audiowide';
+    text-shadow:  1px 1px 1px var(--background-div);
+    margin-top: 1px;
+}
+
+#menu {
+    display: inline;
+    text-align: end;
+}
+
+#menu ul {
     list-style: none;
     text-transform: uppercase;
-    position: absolute;
-    top: -5px;
-    right: 22em;
 }
 
-nav#menu li {
+#menu li {
     display: inline;
-    background-color: black;
-    padding: 5px;
+    font-size: 1.75em;
+    background-color: var(--menu-background1);
+    padding: 2px;
     margin: 1px;
 }
 
-nav#menu h1 {
-    display: none;
-}
-
-nav#menu a{
-    font-family: 'Luckiest Guy', cursive;
-    color: white;
+#menu a {
+    font-family: 'Luckiest Guy';
+    color: var(--menu-txt1);
     text-decoration: none;
 }
 
-nav#menu li:hover {
-    background-color: white;
+#menu li:hover {
+    background-color: var(--menu-background2);
 }
 
-nav#menu a:hover{
-    color: black;
+#menu a:hover{
+    color: var(--link);
+}
+
+/* Footer Text */
+.footer-text {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: #AAAA00;
+}
+
+.footer-references {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: var(--footer-p);
+    text-decoration: none;
+}
+
+/* Ad image */
+#img-ad {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (min-width: 801px){
+    :root{
+        font-size: 0.9em;
+    }
+
+    #container {
+        width: 80vw;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .content{
+        min-width:  70%;
+    }
+
+    .complement {
+        margin-left:  1rem;
+        padding:  0;
+    }
 }

@@ -4,63 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_css/style.css" />
+    <link rel="stylesheet" href="_css/style.css">
     <link rel="stylesheet" href="_css/fale_comigo.css">
-    <title>Fale Comigo</title>
+    <title>Animusha | Otaku</title>
 </head>
 
 <body>
-    <div id="interface">
-        <header id="cabecalho">
-            <hgroup>
-                <h1>Animusha</h1>
-                <h2>Animes, Games, Filmes e Séries</h2>
-            </hgroup>
-            <nav id="menu">
-                <ul>
-                    <h1>Menu Principal</h1>
-                    <li><a href="index.html" target="_self">Home</a></li>
-                    <li><a href="animes.html" target="_self">Animes</a></li>
-                    <li><a href="games.html" target="_self">Games</a></li>
-                    <li><a href="filmes.html" target="_self">Filmes</a></li>
-                    <li><a href="series.html" target="_self">Séries</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h3>Deixe sua mensagem!</h3>
-            <div id="formulario">
-                <form method="POST">
-                    <fieldset>
-                        <legend>Dados Pessoais</legend>
-                        <p><label for="nome">Nome</label></p><input type="text" name="Nome" id="dpNome" size="25"
-                            maxlength="50" placeholder="Nome Completo" />
-                        <p><label for="email">E-mail</label></p><input type="email" name="email" id="dpEmail" size="25"
-                            maxlength="50" placeholder="Digite seu e-mail">
-                        <p><label for="senha">Senha</label></p><input type="password" name="Senha" id="dpSenha"
-                            size="20" placeholder="Senha" />
-                        <p><label for="dataNascimento">Data de Nascimento</label></p><input type="date" name="dpData" />
-                    </fieldset>
-                    <fieldset>
-                        <legend>Assunto</legend>
-                        <input type="radio" name="tema" id="aTema"><label for="assunto">Animes</label>
-                        <input type="radio" name="tema" id="aTema"><label for="assunto">Games</label>
-                        <input type="radio" name="tema" id="aTema"><label for="assunto">Filmes</label>
-                        <input type="radio" name="tema" id="aTema"><label for="assunto">Séries</label>
-                        <input type="radio" name="tema" id="aTema"><label for="assunto">Outra Coisa</label>
-                        <p><label for="mensagem">Diga-me o que queres</label></p><textarea name="mensagem"
-                            id="aMensagem" placeholder="Escreva sua mensgaem" spellcheck="true" rows="5" cols="10"
-                            maxlength="1000"></textarea>
-                        <p></p><input type="checkbox" id="aCheckbox" checked /><label for="cookies" id="warning">Li
-                            todos os termo e Aceito as condições</label>
-                        <p></p><input type="checkbox" id="aCheckbox" checked><label for="mail list" id="warning">Aceito
-                            receber o e-mail com informações semanais do site.</label>
-                        <p></p><input type="submit" value="Enviar" id="aEnviar" />
-                    </fieldset>
-                </form>
-            </div>
-        </main>
-    </div>
+    <section id="container">
+        <div class="display header">
+            <header id="header-content">
+                <hgroup>
+                    <h1>Animusha</h1>
+                    <h2>Animes, Games, Filmes e Séries</h2>
+                </hgroup>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html" target="_self">Home</a></li>
+                        <li><a href="animes.html" target="_self">Animes</a></li>
+                        <li><a href="games.html" target="_self">Games</a></li>
+                        <li><a href="filmes.html" target="_self">Filmes</a></li>
+                        <li><a href="series.html" target="_self">Séries</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="display content">
+            <form method="POST">
+                <fieldset id="fieldset data">
+                    <legend class="fieldset-header">Dados Pessoais</legend>
+                    <p class="fieldset-input-data"><label for="nome">Nome</label></p><input type="text" name="Nome"
+                        id="dpNome" size="25" maxlength="50" placeholder="Nome Completo" />
+                    <p class="fieldset-input-data"><label for="email">E-mail</label></p><input type="email" name="email"
+                        id="dpEmail" size="25" maxlength="50" placeholder="Digite seu e-mail">
+                    <p class="fieldset-input-data"><label for="senha">Senha</label></p><input type="password"
+                        name="Senha" id="dpSenha" size="20" placeholder="Senha" />
+                    <p class="fieldset-input-data"><label for="dataNascimento">Data de Nascimento</label></p><input
+                        type="date" name="dpData" />
+                </fieldset>
+                <fieldset id="fieldset subject">
+                    <legend class="fieldset-header">Assunto</legend>
+                    <div id="label-options">
+                        <input type="radio" name="tema" id="aTema"><label class="label-text"
+                            for="assunto">Animes</label>
+                        <input type="radio" name="tema" id="aTema"><label class="label-text" for="assunto">Games</label>
+                        <input type="radio" name="tema" id="aTema"><label class="label-text"
+                            for="assunto">Filmes</label>
+                        <input type="radio" name="tema" id="aTema"><label class="label-text"
+                            for="assunto">Séries</label>
+                        <input type="radio" name="tema" id="aTema"><label class="label-text" for="assunto">Outra
+                            Coisa</label>
+                    </div>
+                    <p class="fieldset-input-data"><label for="mensagem" id="fieldset-text-area-caller">Diga-me o que
+                            queres</label></p>
+                    <textarea name="mensagem" id="fieldset-text-area" placeholder="Escreva sua mensgaem"
+                        spellcheck="true" rows="5" cols="10" maxlength="1000"></textarea>
+                    <p class="fieldset-input-data"></p><input type="checkbox" id="aCheckbox" checked /><label
+                        for="cookies" id="warning">Li
+                        todos os termo e Aceito as condições</label>
+                    <p class="fieldset-input-data"></p><input type="checkbox" id="aCheckbox" checked><label
+                        for="mail list" id="warning">Aceito
+                        receber o e-mail com informações semanais do site.</label>
+                    <p class="fieldset-input-data"></p><input type="submit" value="Enviar" id="sent-button" />
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="display complement">
+            <img id="img-ad" src="https://images-americanas.b2w.io/spacey/acom/2020/08/07/niver20__banner3_cashback.png"
+                alt="receba hoje">
+        </div>
+
+        <div class="display footer">
+            <p class="footer-text">Fonte das imagens:
+                <a class="footer-references" href="https://www.google.com" target="_blank">Google</a>
+                <a class="footer-references" href="https://www.aficionados.com.br/animes-mais-assistidos-mundo/"
+                    target="_blank">Aficionados</a></p>
+            <p class="footer-text">ESTE SITE TEM CARATER EDUCATIVO E SEM FINALIDADE COMERCIAL</p>
+            <p class="footer-text">Animusha &copy;Todos os Direitos Reservados - 2020</p>
+        </div>
+    </section>
 </body>
 
 </html>
